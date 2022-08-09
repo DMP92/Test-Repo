@@ -1,6 +1,21 @@
 {
+  "name": "cool-ox-test-1",
+  "version": "1.0.2",
   "repository": "#",
   "license": "UNLICENSED",
+  "main": ".dist/bundle.bc99476909750bacf6a0.js",
+  "files": [
+    "dist"
+  ],
+  "respository": {
+    "type": "git",
+    "url": "git+https://github.com/DMP92/test-repo.git"
+  },
+  "author": "spirra-digital",
+  "keywords": [
+    "micelle-test-2",
+    "molecular-test-1"
+  ],
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js"

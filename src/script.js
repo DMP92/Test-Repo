@@ -331,8 +331,8 @@ gltfLoader.setDRACOLoader(dracoLoader)
 // Cube Textures
 const environmentMap = cubeTextureLoader.load([
     nx,
-    '/Images/Standard-Cube-Map/ny.jpg',
-    '/Images/Standard-Cube-Map/nz.jpg',
+    '../static/Images/Standard-Cube-Map/ny.jpg',
+    '../static/Images/Standard-Cube-Map/nz.jpg',
     '/Images/Standard-Cube-Map/px.jpg',
     '/Images/Standard-Cube-Map/py.jpg',
     '/Images/Standard-Cube-Map/pz.jpg',

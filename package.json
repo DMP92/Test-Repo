@@ -1,6 +1,6 @@
 {
   "name": "cool-ox-test-1",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "license": "UNLICENSED",
   "main": ".dist/index.js",
   "files": [

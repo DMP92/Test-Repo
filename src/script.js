@@ -2,6 +2,8 @@ import './style.css'
 import * as THREE from 'three'
 
 // Image import
+// import coolLogo from "../static/Images/cool-ox-logo.webp";
+
 import nx  from '../static/Images/Standard-Cube-Map/nx.jpg';
 import ny from '../static/Images/Standard-Cube-Map/ny.jpg';
 import nz from '../static/Images/Standard-Cube-Map/nz.jpg';
@@ -15,6 +17,7 @@ import roadDirtAO from '../static/Baked Images/Color/RoadDirt017_AO_3K-min.jpg';
 import roadDirtNorm from '../static/Baked Images/Normals/RoadDirt017_NRM_3K-min (1).jpg';
 import roadDirtRough from '../static/Baked Images/Roughness/RoadDirt017_GLOSS_3K-min.jpg';
 import blueMat from '../static/Baked Images/Matcaps/blue-matcap-11.jpg';
+import blueMat2 from '../static/Baked Images/Matcaps/blender-blue-matcap-3.png';
 import grayMat from '../static/Baked Images/Matcaps/dark-grey-matcap.jpg';
 import greenMat from '../static/Baked Images/Matcaps/green-matcap.jpg';
 import grayMat2 from '../static/Baked Images/Matcaps/blue-matcap-2.jpg';
@@ -421,7 +424,7 @@ offwhiteMatcap.encoding = THREE.sRGBEncoding;
 // const aquaBlueMatcap = textureLoader.load('/Baked Images/Matcaps/aqua-blue-matcap.png');
 // const blenderBlueMatcap = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap.png');
 // const blenderBlueMatcap2 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-2.png');
-// const blenderBlueMatcap3 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-3.png');
+const blenderBlueMatcap3 = textureLoader.load(blueMat2);
 // const blenderBlueMatcap4 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-4.png');
 
 // const tailMats = new THREE.MeshPhongMaterial({ 

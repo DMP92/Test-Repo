@@ -179,6 +179,12 @@ body
         width: 120px;
     }
 
+    .logo
+    {
+        height: 100px;
+        width: 120px;
+    }
+
 .link-container
 {
     width: 25vw;

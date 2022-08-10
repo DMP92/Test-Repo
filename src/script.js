@@ -10,7 +10,21 @@ import py from '../static/Images/Standard-Cube-Map/py.jpg';
 import pz from '../static/Images/Standard-Cube-Map/pz.jpg';
 
 import roadDirt from '../static/Baked Images/Displacement/RoadDirt017_DISP_3K.jpg';
+import roadDirtColor from '../static/Baked Images/Color/RoadDirt017_COL_3K-min.jpg';
+import roadDirtAO from '../static/Baked Images/Color/RoadDirt017_AO_3K-min.jpg';
+import roadDirtNorm from '../static/Baked Images/Normals/RoadDirt017_NRM_3K-min (1).jpg';
+import roadDirtRough from '../static/Baked Images/Roughness/RoadDirt017_GLOSS_3K-min.jpg';
+import blueMat from '../static/Baked Images/Matcaps/blue-matcap-11.jpg';
+import grayMat from '../static/Baked Images/Matcaps/dark-grey-matcap.jpg';
+import greenMat from '../static/Baked Images/Matcaps/green-matcap.jpg';
+import grayMat2 from '../static/Baked Images/Matcaps/blue-matcap-2.jpg';
+import orangeMat from '../static/Baked Images/Matcaps/orange-matcap.jpg';
+import offwhiteMat from '../static/Baked Images/Matcaps/offwhite-matcap.jpg';
+import contaminantMat from '../static/Baked Images/Color/RoadDirt017_COL_3K-min.jpg';
 
+import partsText from '../static/Textures/Particles/1.png';
+
+// import cooloxModel from '../static/Models/cool-ox-export-6-15.glb';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
@@ -207,7 +221,7 @@ const updateAllMaterials = () =>
 /**
  * Particles
  */
-const particlesTexture = textureLoader.load('/Textures/Particles/1.png');
+const particlesTexture = textureLoader.load(partsText);
 
 const objectsDistance = 4;
 
@@ -360,13 +374,13 @@ const contaminantDisp = textureLoader.load(roadDirt);
 contaminantDisp.flipY = false;
 
 // Test sphere materials
-const testColor = textureLoader.load('/Baked Images/Color/RoadDirt017_COL_3K-min.jpg');
+const testColor = textureLoader.load(roadDirtColor);
 testColor.encoding = THREE.sRGBEncoding;
-const testAO = textureLoader.load('/Baked Images/Color/RoadDirt017_AO_3K-min.jpg');
+const testAO = textureLoader.load(roadDirtAO);
 testAO.encoding = THREE.sRGBEncoding;
-const testNRM = textureLoader.load('/Baked Images/Normals/RoadDirt017_NRM_3K-min (1).jpg');
+const testNRM = textureLoader.load(roadDirtNorm);
 testNRM.encoding = THREE.sRGBEncoding;
-const testRO = textureLoader.load('/Baked Images/Roughness/RoadDirt017_GLOSS_3K-min.jpg');
+const testRO = textureLoader.load(roadDirtRough);
 testRO.encoding = THREE.sRGBEncoding;
 
 // Normals
@@ -374,7 +388,7 @@ testRO.encoding = THREE.sRGBEncoding;
 // const concreteRough = textureLoader.load('/Baked Images/Roughness/Concrete_Muddy_001_Roughness.jpg')
 // const concreteAO = textureLoader.load('/Baked Images/Roughness/Concrete_Muddy_001_AmbientOcclusion.jpg')
 // const normalHeads = textureLoader.load('/Baked Images/Normals/download.jpg')
-const normalHeads2 = textureLoader.load('/Baked Images/Normals/download-1.jpg')
+// const normalHeads2 = textureLoader.load('/Baked Images/Normals/download-1.jpg')
 // const fabricNormals = textureLoader.load('/Baked Images/Normals/Fabric_Knitted_006_normal.jpg')
 // const fabricNormals2 = textureLoader.load('/Baked Images/Normals/Abstract_002_NRM.jpg')
 // const snowNorm = textureLoader.load('/Baked Images/Normals/Snow_001_NORM.jpg');
@@ -383,32 +397,32 @@ const normalHeads2 = textureLoader.load('/Baked Images/Normals/download-1.jpg')
 // const snowRough = textureLoader.load('/Baked Images/Roughness/Snow_001_ROUGH.jpg')
 
 // Matcaps
-const blueMatcap = textureLoader.load('/Baked Images/Matcaps/blue-matcap-11.jpg');
+const blueMatcap = textureLoader.load(blueMat);
 blueMatcap.encoding = THREE.sRGBEncoding;
 
-const darkGreyMatcap = textureLoader.load('/Baked Images/Matcaps/dark-grey-matcap.jpg');
+const darkGreyMatcap = textureLoader.load(grayMat);
 darkGreyMatcap.encoding = THREE.sRGBEncoding;
 
-const greenMatcap = textureLoader.load('/Baked Images/Matcaps/green-matcap.jpg');
+const greenMatcap = textureLoader.load(greenMat);
 greenMatcap.encoding = THREE.sRGBEncoding;
 
-const greyMatcap = textureLoader.load('/Baked Images/Matcaps/blue-matcap-2.jpg');
+const greyMatcap = textureLoader.load(grayMat2);
 greyMatcap.encoding = THREE.sRGBEncoding;
 
-const orangeMatcap = textureLoader.load('/Baked Images/Matcaps/orange-matcap.jpg');
+const orangeMatcap = textureLoader.load(orangeMat);
 // orangeMatcap.encoding = THREE.sRGBEncoding;
 
-const offwhiteMatcap = textureLoader.load('/Baked Images/Matcaps/offwhite-matcap.jpg');
+const offwhiteMatcap = textureLoader.load(offwhiteMat);
 offwhiteMatcap.encoding = THREE.sRGBEncoding;
 
-const gloomyBlueMatcap = textureLoader.load('/Baked Images/Matcaps/gloomy-blue-matcap.png');
+// const gloomyBlueMatcap = textureLoader.load('/Baked Images/Matcaps/gloomy-blue-matcap.png');
 
-const shinyBlueMatcap = textureLoader.load('/Baked Images/Matcaps/shiny-blue-matcap.png');
-const aquaBlueMatcap = textureLoader.load('/Baked Images/Matcaps/aqua-blue-matcap.png');
-const blenderBlueMatcap = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap.png');
-const blenderBlueMatcap2 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-2.png');
-const blenderBlueMatcap3 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-3.png');
-const blenderBlueMatcap4 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-4.png');
+// const shinyBlueMatcap = textureLoader.load('/Baked Images/Matcaps/shiny-blue-matcap.png');
+// const aquaBlueMatcap = textureLoader.load('/Baked Images/Matcaps/aqua-blue-matcap.png');
+// const blenderBlueMatcap = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap.png');
+// const blenderBlueMatcap2 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-2.png');
+// const blenderBlueMatcap3 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-3.png');
+// const blenderBlueMatcap4 = textureLoader.load('/Baked Images/Matcaps/blender-blue-matcap-4.png');
 
 // const tailMats = new THREE.MeshPhongMaterial({ 
 //     shininess: 20,
@@ -477,11 +491,11 @@ const orangeIcoMats = new THREE.MeshMatcapMaterial({
     opacity: parameters.sceneOptions.scene2.value,
 })
 
-const contaminantMats = textureLoader.load('/Baked Images/Color/RoadDirt017_COL_3K-min.jpg');
+const contaminantMats = textureLoader.load(contaminantMat);
 contaminantMats.flipY = false;
 contaminantMats.encoding = THREE.sRGBEncoding;
 
-const contaminantNormals = textureLoader.load('/Baked Images/Normals/RoadDirt017_NRM_3K-min (1).jpg');
+const contaminantNormals = textureLoader.load(roadDirtNorm);
 contaminantNormals.flipY = false;
 
 const contaminantGEO = new THREE.SphereBufferGeometry(1, 32, 32);
@@ -625,7 +639,7 @@ let meshes = {};
 
 gltfLoader.load(
 	// resource URL
-	'/Models/cool-ox-export-6-15.glb',
+	'../static/Models/cool-ox-export-6-15.glb',
 	// called when the resource is loaded
 	( gltf ) =>
     {

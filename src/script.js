@@ -327,12 +327,12 @@ gltfLoader.setDRACOLoader(dracoLoader)
 
 // Cube Textures
 const environmentMap = cubeTextureLoader.load([
-    '/Images/Standard-Cube-Map/nx.jpg?raw=true',
-    '/Images/Standard-Cube-Map/ny.jpg?raw=true',
-    '/Images/Standard-Cube-Map/nz.jpg?raw=true',
-    '/Images/Standard-Cube-Map/px.jpg?raw=true',
-    '/Images/Standard-Cube-Map/py.jpg?raw=true',
-    '/Images/Standard-Cube-Map/pz.jpg?raw=true',
+    '/static/Images/Standard-Cube-Map/nx.jpg',
+    '/Images/Standard-Cube-Map/ny.jpg',
+    '/Images/Standard-Cube-Map/nz.jpg',
+    '/Images/Standard-Cube-Map/px.jpg',
+    '/Images/Standard-Cube-Map/py.jpg',
+    '/Images/Standard-Cube-Map/pz.jpg',
 ])
 environmentMap.encoding = THREE.sRGBEncoding;
 scene.environment = environmentMap;

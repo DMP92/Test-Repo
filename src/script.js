@@ -2,7 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 
 // Image import
-// import coolLogo from "../static/Images/cool-ox-logo.webp";
+import coolLogo from '../static/Images/deep-earth-logo.png';
 
 import nx  from '../static/Images/Standard-Cube-Map/nx.jpg';
 import ny from '../static/Images/Standard-Cube-Map/ny.jpg';
@@ -45,6 +45,11 @@ const offButton = document.querySelector('.offButton');
 let scene1Status = 'on';
 let scene2Status = 'off';
 let scene3Status = 'off';
+
+const logoLink = document.querySelector('.logo-link');
+const logo = coolLogo;
+
+logoLink.appendChild(logo);
 
 // onButton.addEventListener('click', () => {
 //     scene2Status = 'on';
@@ -350,7 +355,7 @@ window.addEventListener('resize', () =>
 
 // Draco loader
 const dracoLoader = new DRACOLoader(loadingManager)
-dracoLoader.setDecoderPath('/draco/')
+dracoLoader.setDecoderPath('../static/draco/')
 
 // GLTF loader
 const gltfLoader = new GLTFLoader(loadingManager)

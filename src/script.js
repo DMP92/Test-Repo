@@ -7,7 +7,9 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from 'gsap/all';
 import { gsap } from 'gsap';
+console.log(nx);
 gsap.registerPlugin(ScrollToPlugin);
+
 
 const onButton = document.querySelector('.onButton');
 const offButton = document.querySelector('.offButton');

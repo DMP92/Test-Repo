@@ -27,7 +27,7 @@ import contaminantMat from '../static/Baked Images/Color/RoadDirt017_COL_3K-min.
 
 import partsText from '../static/Textures/Particles/1.png';
 
-// import cooloxModel from '../static/Models/cool-ox-export-6-15.glb';
+import cooloxModel from '../static/Models/cool-ox-export-6-15.glb';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
@@ -642,7 +642,7 @@ let meshes = {};
 
 gltfLoader.load(
 	// resource URL
-	'../static/Models/cool-ox-export-6-15.glb',
+	cooloxModel,
 	// called when the resource is loaded
 	( gltf ) =>
     {

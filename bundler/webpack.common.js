@@ -33,6 +33,21 @@ module.exports = {
                 test: /\.(html)$/,
                 use: ['html-loader']
             },
+            
+            // Loaders
+            {
+                test: /\.(glb|gltf)$/,
+                use:
+                [
+                    {
+                        loader: 'file-loader',
+                        options:
+                        {
+                            outputPath: 'assets/models/'
+                        }
+                    }
+                ]
+            },
 
             // JS
             {

@@ -356,7 +356,7 @@ scene3.environment = environmentMap;
 // Displacement
 // const fabric2Disp = textureLoader.load('/Baked Images/Displacement/Abstract_002_DISP.png');
 // const snowDisp = textureLoader.load('/Baked Images/Displacement/Snow/Snow_001_DISP.png');
-const contaminantDisp = roadDirt;
+const contaminantDisp = textureLoader.load(roadDirt);
 contaminantDisp.flipY = false;
 
 // Test sphere materials

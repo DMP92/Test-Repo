@@ -1,6 +1,15 @@
 import './style.css'
 import * as THREE from 'three'
+
+// Image import
 import nx  from '../static/Images/Standard-Cube-Map/nx.jpg';
+import ny from '../static/Images/Standard-Cube-Map/ny.jpg';
+import nz from '../static/Images/Standard-Cube-Map/nz.jpg';
+import px from '../static/Images/Standard-Cube-Map/px.jpg';
+import py from '../static/Images/Standard-Cube-Map/py.jpg';
+import pz from '../static/Images/Standard-Cube-Map/pz.jpg';
+
+
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
@@ -331,11 +340,11 @@ gltfLoader.setDRACOLoader(dracoLoader)
 // Cube Textures
 const environmentMap = cubeTextureLoader.load([
     nx,
-    '../static/Images/Standard-Cube-Map/ny.jpg',
-    '../static/Images/Standard-Cube-Map/nz.jpg',
-    '/Images/Standard-Cube-Map/px.jpg',
-    '/Images/Standard-Cube-Map/py.jpg',
-    '/Images/Standard-Cube-Map/pz.jpg',
+    ny,
+    nz,
+    px,
+    py,
+    pz,
 ])
 environmentMap.encoding = THREE.sRGBEncoding;
 scene.environment = environmentMap;
@@ -345,7 +354,7 @@ scene3.environment = environmentMap;
 // Displacement
 // const fabric2Disp = textureLoader.load('/Baked Images/Displacement/Abstract_002_DISP.png');
 // const snowDisp = textureLoader.load('/Baked Images/Displacement/Snow/Snow_001_DISP.png');
-const contaminantDisp = textureLoader.load('/Baked Images/Displacement/RoadDirt017_DISP_3K.jpg')
+const contaminantDisp = textureLoader.load('../static/Baked Images/Displacement/RoadDirt017_DISP_3K.jpg')
 contaminantDisp.flipY = false;
 
 // Test sphere materials

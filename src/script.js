@@ -1,6 +1,6 @@
 import './style.css'
 import * as THREE from 'three'
-import { nx } from '../static/Images/Standard-Cube-Map/nx.jpg';
+import nx  from '../static/Images/Standard-Cube-Map/nx.jpg';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';

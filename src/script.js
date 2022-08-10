@@ -9,6 +9,8 @@ import px from '../static/Images/Standard-Cube-Map/px.jpg';
 import py from '../static/Images/Standard-Cube-Map/py.jpg';
 import pz from '../static/Images/Standard-Cube-Map/pz.jpg';
 
+import roadDirt from '../static/Baked Images/Displacement/RoadDirt017_DISP_3K.jpg';
+
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
@@ -354,7 +356,7 @@ scene3.environment = environmentMap;
 // Displacement
 // const fabric2Disp = textureLoader.load('/Baked Images/Displacement/Abstract_002_DISP.png');
 // const snowDisp = textureLoader.load('/Baked Images/Displacement/Snow/Snow_001_DISP.png');
-const contaminantDisp = textureLoader.load('../static/Baked Images/Displacement/RoadDirt017_DISP_3K.jpg')
+const contaminantDisp = roadDirt;
 contaminantDisp.flipY = false;
 
 // Test sphere materials

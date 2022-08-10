@@ -1,5 +1,6 @@
 import './style.css'
 import * as THREE from 'three'
+import { nx } from '/Images/Standard-Cube-Map/nx.jpg';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
@@ -327,7 +328,7 @@ gltfLoader.setDRACOLoader(dracoLoader)
 
 // Cube Textures
 const environmentMap = cubeTextureLoader.load([
-    '/static/Images/Standard-Cube-Map/nx.jpg',
+    nx,
     '/Images/Standard-Cube-Map/ny.jpg',
     '/Images/Standard-Cube-Map/nz.jpg',
     '/Images/Standard-Cube-Map/px.jpg',

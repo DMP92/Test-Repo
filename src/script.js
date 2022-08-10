@@ -49,7 +49,7 @@ let scene3Status = 'off';
 const logoLink = document.querySelector('.logo-link');
 const logo = document.createElement('img');
 logo.src = coolLogo;
-logo.classList.add('logo-link');
+logo.classList.add('logo');
 
 
 logoLink.appendChild(logo);
